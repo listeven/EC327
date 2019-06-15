@@ -1,0 +1,4 @@
+#Sat Jun 15 16:44:04 EDT 2019
+base.0=D\:\\cygwin64\\home\\Steven\\EC327\\EC327 Android App\\EC327_Game\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

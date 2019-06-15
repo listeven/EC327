@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bangbang.PlayScreen">
+
+    <Button
+        android:text="Reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/defendButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+        android:id="@+id/reloadButton"
+        android:textSize="6sp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/attackButton"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:textSize="6sp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Defend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/defendButton"
+        android:textAllCaps="false"
+        android:textSize="6sp"
+        android:layout_alignBaseline="@+id/attackButton"
+        android:layout_alignBottom="@+id/attackButton"
+        android:layout_toRightOf="@+id/attackButton"
+        android:layout_toEndOf="@+id/attackButton"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:text="Double"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doubleButton"
+        android:textSize="6sp"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/reloadButton"
+        android:layout_alignBottom="@+id/reloadButton"
+        android:layout_toLeftOf="@+id/reloadButton"
+        android:layout_toStartOf="@+id/reloadButton"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ammo_Amount"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HP1"
+        android:layout_marginBottom="108dp"
+        android:layout_above="@+id/defendButton"
+        android:layout_alignRight="@+id/defendButton"
+        android:layout_alignEnd="@+id/defendButton"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/health2"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignBaseline="@+id/HP1"
+        android:layout_alignBottom="@+id/HP1"
+        android:layout_alignRight="@+id/doubleButton"
+        android:layout_alignEnd="@+id/doubleButton" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compammo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ninjas"
+        android:id="@+id/ninja"/>
+
+</RelativeLayout>
